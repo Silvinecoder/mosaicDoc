@@ -1,0 +1,73 @@
+// Standard Global Font Size
+
+html {
+  font-size: 16px;
+}
+
+// Font Families
+
+$font-family--primary: 'Courier Prime', monospace;
+
+// Main Relative Font Sizes
+
+$font-size--text-xs: 0.75rem; // 12px
+$font-size--text-sm: 0.875rem; // 14px
+$font-size--text-md: 1rem; // 16px - BASE FONT SIZE
+$font-size--text-lg: 1.125rem; // 18px
+$font-size--text-xl: 1.25rem; // 20px
+
+$font-size--display-xs: 1.5rem; // 24px
+$font-size--display-sm: 1.875rem; // 30px
+$font-size--display-md: 2.25rem; // 36px
+$font-size--display-lg: 3rem; // 48px
+$font-size--display-xl: 3.75rem; // 60px
+
+// Main Font Weights
+
+$font-weight--light: 300;
+$font-weight--regular: 400;
+$font-weight--medium: 500;
+$font-weight--semi-bold: 600;
+$font-weight--bold: 700;
+
+// Other Font Variables
+
+$line-height--base: 1.5;
+$line-height--medium: 1.3333;
+$line-height--heading: 1.25;
+
+//Breakpoints
+
+$breakpoint--desktop: 1200px;
+
+/*
+     === Global Type Styles ===
+  */
+
+body {
+  font-family: $font-family--primary;
+  font-size: $font-size--text-md;
+  font-weight: $font-weight--regular;
+  line-height: $line-height--base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin text--heading-global {
+  font-family: $font-family--primary;
+  color: var(--typography-text-secondary);
+  font-weight: $font-weight--regular;
+  line-height: $line-height--heading;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include text--heading-global;
+}
