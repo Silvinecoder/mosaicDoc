@@ -1,0 +1,523 @@
+<!-- Homepage -->
+
+<!--News grid -->
+
+<div class="news-grid">
+  <div class="first-column">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png"
+      alt=""
+    />
+
+    <div class="text-container">
+      <h4>Child & family mental health & well-being</h4>
+      <p>
+        Building evidence for prevention of child maltreatment: Skillful
+        Parenting combined with farming skills strengthening in rural
+        Tanzaniaaaaaaaaaa
+      </p>
+    </div>
+  </div>
+
+  <div class="second-column">
+    <div class="grid-box">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png"
+        alt=""
+      />
+      <div class="text-container">
+        <h4>Child & family mental health & well-being</h4>
+        <p>
+          Building evidence for prevention of child maltreatment: Skillful
+          Parenting combined with farming skills strengthening in rural
+          Tanzaniaaaaaaaaaa
+        </p>
+      </div>
+    </div>
+
+    <div class="grid-box">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png"
+        alt=""
+      />
+      <div class="text-container">
+        <h4>Child & family mental health & well-being</h4>
+        <p>
+          Building evidence for prevention of child maltreatment: Skillful
+          Parenting combined with farming skills strengthening in rural
+          Tanzaniaaaaaaaaaa
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+  .news-grid {
+    display: grid;
+    grid-template-columns: 864px 416px;
+    column-gap: 32px;
+  }
+
+  /* columns */
+
+  .news-grid .grid-box,
+  .news-grid .first-column {
+    position: relative;
+    height: auto;
+  }
+
+  /* Grid box */
+
+  .news-grid .second-column .grid-box:first-child {
+    margin-bottom: 32px;
+  }
+
+  /* Text container */
+
+  .news-grid .text-container {
+    position: absolute;
+    bottom: 0;
+    background: #002147;
+    opacity: 0.9;
+    padding: 0px 32px 24px 32px;
+  }
+
+  /* Text */
+
+  .text-container h4 {
+    color: #00f3ff;
+    margin: 0 0 8px 0;
+  }
+
+  .text-container p {
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .text-container p,
+  .text-container h4 {
+    font-weight: bold;
+  }
+
+  .first-column .text-container p {
+    font-size: 28px;
+  }
+
+  /* Images */
+  .news-grid .first-column img {
+    width: 864px;
+    height: 572px;
+  }
+
+  .news-grid .second-column img {
+    width: 416px;
+    height: 270px;
+  }
+</style>
+
+<!-- CTA slide grid -->
+<div class="research-cta-grid">
+  <p>RESEARCH BY THEME:</p>
+  <div class="cta-button">
+    <a href="">POVERTY & SOCIAL INEQUALITIES</a>
+    <a href="">WELFARE STATES, GENDER & CARE</a>
+    <a href="">SOCIAL POLICY & COVID-19</a>
+    <a href="">VIOLENCE PREVENTION</a>
+    <a href="">CHILD & FAMILY WELFARE</a>
+    <a href="">POLITICAL ECONOMY</a>
+    <a href="">Health Inequalities</a>
+  </div>
+</div>
+
+<style type="text/css">
+  .research-cta-grid {
+    display: none;
+  }
+
+  @media (min-width: 992px) {
+    .research-cta-grid {
+      padding: 21px 0;
+      border-top: 1px solid #bcd0ea;
+      border-bottom: 1px solid #bcd0ea;
+    }
+
+    .research-cta-grid,
+    .research-cta-grid .cta-button {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 26px;
+    }
+
+    .research-cta-grid a {
+      text-decoration: none;
+      color: inherit;
+      border-right: 1px solid red;
+      padding-right: 26px;
+      font-weight: bold;
+      font-size: 12px;
+    }
+
+    .research-cta-grid a:last-child {
+      border-right: 0;
+    }
+
+    .research-cta-grid p,
+    .research-cta-grid a {
+      margin: 0;
+    }
+
+    .research-cta-grid p {
+      font-size: 14px;
+    }
+  }
+</style>
+
+<!-- Mission statement component -->
+
+<div class="our-mission--container">
+  <h4>Our Mission</h4>
+  <div class="h1--container">
+    <h1>
+      Our work drives social reform across the globe, having real impact on
+      inequalities and bringing positive change to people’s lives.
+    </h1>
+  </div>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac enim ac
+    ligula porttitor egestas. Duis ligula ligula, tristique eget urna sit amet,
+    molestie pharetra eros. Praesent quis enim at ipsum pretium aliquam id eget
+    sapien. Vivamus efficitur mi vel vulputate ornare. Integer risus elit,
+    pulvinar ac arcu at, ultricies pretium enim
+  </p>
+
+  <div class="our-mission--buttons">
+    <a href="">Our impact</a>
+    <a href="">The faculty</a>
+  </div>
+</div>
+
+<style type="text/css">
+  .our-mission--container {
+    width: 725px;
+  }
+
+  .our-mission--container h4 {
+    font-size: 12px;
+  }
+
+  .h1--container h1 {
+    margin: 0;
+    font-size: 42px;
+  }
+
+  .h1--container h1::before {
+    content: '\2713';
+    vertical-align: text-top;
+  }
+
+  .h1--container h1::after {
+    content: '\2713';
+  }
+
+  .our-mission--container p {
+    width: 581px;
+    margin: 32px 0;
+    font-size: 16px;
+  }
+
+  .our-mission--container .our-mission--buttons a {
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid #00f3ff;
+    padding: 16px 24px;
+    margin-right: 16px;
+    font-size: 14px;
+  }
+
+  .our-mission--container .our-mission--buttons a:last-child {
+    margin-right: 0;
+  }
+</style>
+
+<!-- Tab container -->
+
+<!-- Tab top container -->
+
+<div class="programmes--container">
+  <h4>Programmes</h4>
+  <div class="programmes-grid--container">
+    <h2>Build your future with DSPI</h2>
+    <button><a href="">VIEW ADMISSIONS</a></button>
+  </div>
+</div>
+
+<style type="text/css">
+  .programmes--container h4,
+  .programmes--container h2 {
+    margin: 0;
+  }
+
+  .programmes--container h4 {
+    color: #00f3ff;
+    margin-bottom: 12px;
+  }
+
+  .programmes--container h2 {
+    color: white;
+  }
+
+  .programmes-grid--container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .programmes-grid--container button {
+    background: none;
+    color: white;
+    border: 2px solid #00f3ff;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+    padding: 16px 24px;
+    margin-right: 16px;
+  }
+
+  .programmes-grid--container button:last-child {
+    margin-right: 0;
+  }
+
+  .programmes-grid--container button a {
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
+
+<!-- Tab bottom container-->
+
+<div class="tab-content">
+  <div class="text-container">
+    <h2>Pursue a DPhil at DSPI</h2>
+    <p>
+      Nam lacus elit, dictum in consectetur sagittis, elementum quis dui.
+      Aliquam tincidunt lorem tellus, vitae pulvinar erat fringilla sit amet.
+      Aenean volutpat lorem eget lorem sollicitudin viverra. Integer nulla est,
+      condimentum in risus vel, faucibus tincidunt eros. Pellentesque mollis
+      arcu at felis pulvinar, non dapibus ex mattis.
+    </p>
+    <button><a href="">EXPLORE MORE</a></button>
+  </div>
+  <div class="image-container">
+    <img src="" alt="Hello" />
+  </div>
+</div>
+
+<style type="text/css">
+  .tab-content {
+    display: grid;
+    grid-template-columns: 368px 480px;
+    column-gap: 80px;
+  }
+
+  .tab-content button {
+    background: none;
+    color: inherit;
+    border: 2px solid #00f3ff;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+    padding: 16px 24px;
+    margin-right: 16px;
+  }
+
+  .tab-content button:last-child {
+    margin-right: 0;
+  }
+
+  .tab-content button a {
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
+
+<!-- News statement text -->
+
+<div class="homepage-news--container">
+  <h4><strong>News</strong></h4>
+
+  <h2><strong>Catch up on latest developments</strong></h2>
+
+  <p>
+    Nam lacus elit, dictum in consectetur sagittis, elementum quis dui. Aliquam
+    tincidunt lorem tellus, vitae pulvinar erat fringilla sit amet. Aenean
+    volutpat lorem eget lorem sollicitudin viverra.
+  </p>
+</div>
+<style type="text/css">
+  .homepage-news--container {
+    text-align: center;
+  }
+
+  .homepage-news--container h2 {
+    margin: 16px 0;
+  }
+
+  .homepage-news--container h4 p {
+    margin-bottom: 0;
+    padding: 0;
+  }
+</style>
+
+<!-- Events text container -->
+
+<div class="homepage-events--container">
+  <h4>Events</h4>
+  <h2>Seminars, Lectures and more...</h2>
+  <p>
+    Sed molestie quam sed dignissim bibendum. Vivamus dignissim lorem neque, at
+    auctor lacus aliquam in. Vivamus eget ex purus. Nulla interdum, est sed
+    posuere eleifend, ex ex ornare ipsum, ac posuere ipsum tellus eget felis.
+    Suspendisse accumsan posuere cursus. Maecenas in justo non odio blandit
+    auctor
+  </p>
+</div>
+
+<style type="text/css">
+  .homepage-events--container {
+    text-align: center;
+  }
+
+  .homepage-events--container h2 {
+    margin: 16px 0;
+  }
+
+  .homepage-events--container h4 p {
+    margin-bottom: 0;
+    padding: 0;
+  }
+</style>
+
+<!--footer-->
+
+<div class="footer-links">
+  <div class="dspi-container">
+    <img
+      alt="DSPI Logos"
+      src="https://dspi.web.ox.ac.uk/sites/default/files/dspi_ox_uni_logo.svg"
+    />
+    <h4><b>Department of Social Policy Intervention</b></h4>
+
+    <p>32 Wellington Square, Oxford, OX1 2ER</p>
+  </div>
+
+  <div class="for-links links">
+    <p>Information for:</p>
+
+    <ul>
+      <li><a href="">prospective graduate students</a></li>
+      <li><a href="">Current DSPI students</a></li>
+      <li><a href="">Weblearn for staff</a></li>
+      <li><a href="">Prospective academic Visitors</a></li>
+    </ul>
+  </div>
+
+  <div class="about-links links">
+    <p>Information about:</p>
+
+    <ul>
+      <li><a href="">How to apply</a></li>
+      <li><a href="">Fees and fundings</a></li>
+      <li><a href="">Weblearn for staff</a></li>
+      <li><a href="">Current DSPI vacancies</a></li>
+    </ul>
+  </div>
+
+  <div class="information-links links">
+    <p>Useful information:</p>
+
+    <ul>
+      <li><a href="">How to apply</a></li>
+      <li><a href="">Term dates</a></li>
+      <li><a href="">libraries</a></li>
+      <li><a href="">Oxford University homepage</a></li>
+    </ul>
+  </div>
+</div>
+<style type="text/css">
+  .dspi-container p {
+    font-weight: normal;
+  }
+  .footer-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer-links li {
+    margin: 16px 0;
+  }
+  .footer-links li:last-child {
+    margin: 0;
+  }
+  .footer-links li a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .links p {
+    font-weight: bold;
+    margin: 0;
+  }
+
+  @media (min-width: 768px) {
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+</style>
+
+<!-- Second Footer-->
+<div class="second-footer-links">
+  <p>
+    <a href="">Copyright 2021 - Department of Social Policy and Intervention</a>
+  </p>
+
+  <p><a href="">PICTURE CREDITS</a></p>
+
+  <p><a href="">PRIVACY STATEMENT</a></p>
+
+  <p><a href="">ACCESSIBILITY STATEMENT</a></p>
+
+  <p>
+    WEBSITE BY <a href="https://www.versantus.co.uk/"><b>VERSANTUS</b></a>
+  </p>
+</div>
+<style type="text/css">
+  .second-footer-links a {
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  #wrapper-footer-bottom
+    #footer-bottom
+    .row
+    .paragraphs-items
+    .field-type-paragraphs
+    .field-items
+    .field-item
+    .entity-paragraphs-item {
+    margin-bottom: 0 !important;
+    padding: 16px 0 0 0 !important;
+  }
+
+  @media (min-width: 768px) {
+    .second-footer-links {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+</style>

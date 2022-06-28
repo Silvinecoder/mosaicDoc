@@ -1,0 +1,24 @@
+.q-page {
+  max-width: 1400px;
+  .q-list {
+    margin-top: 60px;
+
+    .code-block {
+      background: black;
+      color: white;
+      margin-bottom: 32px;
+      opacity: 0.8;
+      padding: 8px;
+    }
+  }
+
+  img {
+    height: auto;
+    margin-bottom: 32px;
+    width: 800px;
+  }
+}
+
+// Import styles
+
+@import 'typography.scss';

@@ -28,12 +28,18 @@
 
         <!--Links-->
         <q-list padding>
-          <q-item clickable v-ripple to="/sitesettings">
-            <q-item-section> Site Settings </q-item-section>
+          <q-item clickable v-ripple to="/override">
+            <q-item-section> Override</q-item-section>
+          </q-item>
+          <q-item clickable v-ripple to="/header">
+            <q-item-section> Header</q-item-section>
           </q-item>
 
-          <q-item active clickable v-ripple to="/about">
-            <q-item-section> Star </q-item-section>
+          <q-item active clickable v-ripple to="/navbar">
+            <q-item-section> Navbar </q-item-section>
+          </q-item>
+          <q-item active clickable v-ripple to="/news">
+            <q-item-section> News Components </q-item-section>
           </q-item>
         </q-list>
       </q-scroll-area>

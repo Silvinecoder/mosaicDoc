@@ -6,8 +6,20 @@ const routes: RouteRecordRaw[] = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       {
-        path: '/sitesettings',
-        component: () => import('pages/SiteSettings.vue'),
+        path: '/override',
+        component: () => import('src/pages/OverridePage.vue'),
+      },
+      {
+        path: '/header',
+        component: () => import('src/pages/HeaderPage.vue'),
+      },
+      {
+        path: '/navbar',
+        component: () => import('src/pages/NavbarPage.vue'),
+      },
+      {
+        path: '/news',
+        component: () => import('src/pages/NewsPage.vue'),
       },
     ],
   },
